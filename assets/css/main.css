@@ -4329,46 +4329,7 @@ footer h3 {
   margin: 1.5rem 0;
 }
 /*--- Contact Form --*/
-.contact-box {
-  background-color: #fff;
-  border: 1px solid #ddd;
-  padding: 30px 35px;
-  -webkit-transition: all 0.3s ease-out 0s;
-  -moz-transition: all 0.3s ease-out 0s;
-  -ms-transition: all 0.3s ease-out 0s;
-  -o-transition: all 0.3s ease-out 0s;
-  transition: all 0.3s ease-out 0s;
-}
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
-  .contact-box {
-    padding: 30px 25px;
-  }
-}
-@media (max-width: 767px) {
-  .contact-box {
-    padding: 30px 25px;
-  }
-}
-.contact-box .contact-icon i {
-  font-size: 48px;
-  color: #97233f;
-}
-.contact-box .contact-content {
-  margin-top: 15px;
-}
-.contact-box .contact-content .contact-title {
-  font-size: 18px;
-  font-weight: 600;
-  padding-bottom: 15px;
-}
-.contact-box:hover {
-  -webkit-box-shadow: 0px 0px 21px 0px rgba(152, 152, 152, 0.23);
-  -moz-box-shadow: 0px 0px 21px 0px rgba(152, 152, 152, 0.23);
-  box-shadow: 0px 0px 21px 0px rgba(152, 152, 152, 0.23);
-}
-.mt-30 {
-  margin-top: 30px;
-}
+
 .form-group {
   margin-bottom: 1.3rem;
 }
