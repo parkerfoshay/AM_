@@ -2076,6 +2076,7 @@ label {
 input[type="text"],
 input[type="password"],
 input[type="email"],
+input[type="tel"],
 select,
 textarea {
   -moz-appearance: none;
@@ -2095,6 +2096,7 @@ textarea {
 input[type="text"]:invalid,
 input[type="password"]:invalid,
 input[type="email"]:invalid,
+input[type="tel"]:invalid,
 select:invalid,
 textarea:invalid {
   box-shadow: none;
@@ -2135,6 +2137,7 @@ textarea:invalid {
 input[type="text"],
 input[type="password"],
 input[type="email"],
+input[type="tel"],
 select {
   height: 3.5em;
 }
@@ -2235,6 +2238,7 @@ label {
 input[type="text"],
 input[type="password"],
 input[type="email"],
+input[type="tel"],
 select,
 textarea {
   background-color: rgba(144, 144, 144, 0.075);
@@ -2245,6 +2249,7 @@ textarea {
 input[type="text"]:focus,
 input[type="password"]:focus,
 input[type="email"]:focus,
+input[type="tel"]:focus,
 select:focus,
 textarea:focus {
   border-color: #ad8a85;
@@ -2302,6 +2307,7 @@ input[type="radio"]:focus + label:before {
 form.alt input[type="text"],
 form.alt input[type="password"],
 form.alt input[type="email"],
+form.alt input[type="tel"],
 form.alt select,
 form.alt textarea {
   background-color: transparent;

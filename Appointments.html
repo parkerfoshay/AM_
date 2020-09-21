@@ -53,9 +53,12 @@
       <i class="icon far fa-calendar-check"></i>
       <h2>Appointments</h2>
       <p>Are you ready to make an appointment?</p>
-      <a href="#appointments" class="button alt big"
-        ><i class="fas fa-angle-down"></i
-      ></a>
+      
+      <ul class="actions">
+        <li><a href="#appointments" class="button big special">Our Process</a></li>
+        <li><a href="#appointmentMaker" class="button big alt">Make an Appointment</a></li>
+      </ul>
+      <p style="font-size: 11px;">Call for more information on our mobile services</p>
     </section>
 
     <!-- Start of appointments -->
@@ -211,11 +214,7 @@
         </ul>
         <h3>Have more questions?</h3>
         <p>We are here to answer any questions that you may have about treating your snoring and Obstructive Sleep Apnea (OSA) with dental sleep therapy. During your initial call or visit, you may be asked to provide us with health information so we can better understand your snoring or sleep disordered breathing problem. If you have already completed a sleep study, you will need to provide the contact information for your physician so our team can obtain a copy of your sleep report prior to your arrival. You will also be asked to complete a patient information page online, or bring a paper copy with you for your appointment. Once your information is we will make an appointment for a free consultation with the most conveniently located Dental Sleep Solutions® dentist in your area. Successful treatment of snoring and Obstructive Sleep Apnea (OSA) using dental sleep therapy relies on seeking treatment from a properly trained dentist who adheres to the latest standards of treatment.</p>
-        <ul class="actions">
-          <li><a href="#" class="button big special">Patient Portal</a></li>
-          <li><a href="Contact.html" class="button big alt">Contact Us</a></li>
-          
-        </ul>
+        <hr>
       </div>
     </section>
 
@@ -238,102 +237,125 @@
     <!-- Four -->
 
     <!-- Footer -->
-    <footer>
+   
+      <form class=""  action="" id="appointmentMaker">
+      <div class="container">
+        <h2>Make an Appointment!</h2>
+        <div class="row">
+        <div class="row uniform 50%">
+          <div class="6u 12u$(xsmall)">
+            <input type="text" name="firstName" id="firstName" value="" placeholder="First Name" />
+          </div>
+          <div class="6u$ 12u$(xsmall)">
+            <input type="email" name="lastName" id="lastName" value="" placeholder="Last Name" />
+          </div>
+          <div class="6u$ 12u$(xsmall)">
+            <input type="email" name="email" id="email" value="" placeholder="Email" />
+          </div>
+          <div class="6u 12u$(xsmall)">
+            <input type="tel" name="phoneNumber" id="phoneNumber" value="" placeholder="Phone #" />
+          </div>
+          
+        </div>
+        
+      </div>
       <div class="row">
-        <div class="col-md-5">
-          <i class="icon icon-fa fas fa-wind"></i>
-          <p>
-            Feel free to reach out to us if you have any questions or concerns.
-            We are always pleased to help when we can.
-          </p>
-          <strong style="color: #48322e;">Our Address</strong>
-          <p>1234 East Washington Street, suite #230<br />Phoenix, AZ 85016</p>
-          <strong style="color: #48322e;">Phone Number</strong>
-          <p>602-000-0000 <br />623-000-0000</p>
-
-          <ul class="icons">
-            <li>
-              <a href="#" class="icon fa-twitter"
-                ><span class="label">Twitter</span></a
-              >
-            </li>
-            <li>
-              <a href="#" class="icon fa-facebook"
-                ><span class="label">Facebook</span></a
-              >
-            </li>
-            <li>
-              <a href="#" class="icon fa-instagram"
-                ><span class="label">Instagram</span></a
-              >
-            </li>
-            <li>
-              <a href="#" class="icon fa-github"
-                ><span class="label">Github</span></a
-              >
-            </li>
-            <li>
-              <a href="#" class="icon fa-dribbble"
-                ><span class="label">Dribbble</span></a
-              >
-            </li>
-            <li>
-              <a href="#" class="icon fa-tumblr"
-                ><span class="label">Tumblr</span></a
-              >
-            </li>
+        <div class="col-md" style="margin-top: 1rem;">
+          <h5>Prefered Time of Day?</h5>
+          <div class="4u 12u$(xsmall)">
+            
+            <input type="radio" id="morning" name="morning" checked>
+            <label for="morning">Morning</label>
+          </div>
+          <div class="4u 12u$(xsmall)">
+            <input type="radio" id="afternoon" name="afternoon">
+            <label for="afternoon">Afternoon</label>
+          </div>
+          <div class="4u$ 12u$(xsmall)">
+            <input type="radio" id="evening" name="evening">
+            <label for="evening">Evening</label>
+          </div>
+        </div>
+        <div class="col-md" style="margin-top: 1rem;">
+          <h5>Best Way to Contect You?</h5>
+          <div class="6u 12u$(small)">
+            <input type="checkbox" id="call" name="call" checked>
+            <label for="call">Call</label>
+          </div>
+          <div class="6u$ 12u$(small)">
+            <input type="checkbox" id="text" name="text">
+            <label for="text">Text</label>
+          </div>
+          <div class="6u$ 12u$(small)">
+            <input type="checkbox" id="emailButton" name="emailButton">
+            <label for="emailButton">Email</label>
+          </div>
+        </div>
+        
+      </div>
+      <div class="row">
+        <div class="12u$">
+          <textarea name="message" id="message" placeholder="Enter your message" rows="6"></textarea>
+        </div>
+        <div class="12u$">
+          <ul class="actions">
+            <li><input type="submit" value="Send Message" class="special" /></li>
+            
           </ul>
         </div>
-        <div class="col-md-7">
-          <h3 style="color: #48322e;">Contact Us</h3>
-          <form
-            action="contact.php"
-            id="contact-form"
-            method="POST"
-            data-netlify="true"
-          >
-            <div class="messages"></div>
-            <div class="controls">
-              <div class="form-group 6u 12u$(xsmall)">
-                <input
-                  type="text"
-                  id="form_name"
-                  name="name"
-                  class="form-control"
-                  placeholder="Enter Your Name"
-                  required
-                />
-              </div>
-              <div class="form-group 6u 12u$(xsmall)">
-                <input
-                  type="email"
-                  id="form_email"
-                  name="email"
-                  class="form-control"
-                  placeholder="Enter Your Email"
-                  required
-                />
-              </div>
-              <div class="form-group 12u$">
-                <textarea
-                  name="message"
-                  id="form_message"
-                  class="form-control"
-                  required
-                  placeholder="Enter Your Message"
-                  rows="4"
-                ></textarea>
-              </div>
-              <input
-                type="submit"
-                class="btn btn-outline-light btn-sm"
-                value="SEND"
-              />
-            </div>
-          </form>
-        </div>
       </div>
-    </footer>
+    </form>
+    
+    <!-- <footer>
+      <form method="post" action="#">
+        <h2>Make an Appointment!</h2>
+        <div class="row uniform 50%">
+          <div class="6u 12u$(xsmall)">
+            <input type="text" name="firstName" id="firstName" value="" placeholder="First Name" />
+          </div>
+          <div class="6u$ 12u$(xsmall)">
+            <input type="email" name="lastName" id="lastName" value="" placeholder="Last Name" />
+          </div>
+          <div class="6u$ 12u$(xsmall)">
+            <input type="email" name="email" id="email" value="" placeholder="Email" />
+          </div>
+          <div class="6u 12u$(xsmall)">
+            <input type="tel" name="phoneNumber" id="phoneNumber" value="" placeholder="Phone #" />
+          </div>
+          
+          <div class="4u 12u$(xsmall)">
+            
+            <input type="radio" id="morning" name="priority" checked>
+            <label for="priority-low">Morning 9am - 11am</label>
+          </div>
+          <div class="4u 12u$(xsmall)">
+            <input type="radio" id="priority-normal" name="priority">
+            <label for="priority-normal">Normal Priority</label>
+          </div>
+          <div class="4u$ 12u$(xsmall)">
+            <input type="radio" id="priority-high" name="priority">
+            <label for="priority-high">High Priority</label>
+          </div>
+          <div class="6u 12u$(small)">
+            <input type="checkbox" id="copy" name="copy">
+            <label for="copy">Email me a copy of this message</label>
+          </div>
+          <div class="6u$ 12u$(small)">
+            <input type="checkbox" id="human" name="human" checked>
+            <label for="human">I am a human and not a robot</label>
+          </div>
+          <div class="12u$">
+            <textarea name="message" id="message" placeholder="Enter your message" rows="6"></textarea>
+          </div>
+          <div class="12u$">
+            <ul class="actions">
+              <li><input type="submit" value="Send Message" class="special" /></li>
+              <li><input type="reset" value="Reset" /></li>
+            </ul>
+          </div>
+        </div>
+      </form>
+    </footer> -->
     <a href="#" class="scrolltop">
       <div class="scroll icon"><i class="fa fa-4x fa-angle-up"></i></div>
     </a>
